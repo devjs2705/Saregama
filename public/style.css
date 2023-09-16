@@ -1,0 +1,836 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+                                                          /* HOME PAGE */                  
+.outer{
+    display: flex;
+    background-color: rgb(39, 33, 33);
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.navBar li{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    width: 200%;
+    /* border-bottom: 1px solid rgb(165, 151, 151); */
+}
+
+.navBar li :hover{
+    color:  rgb(134, 126, 126);
+    /* background-color:  rgb(134, 126, 126); */
+}
+
+.navBar i{
+    font-size: medium;
+    padding-right: 20px;
+    padding-left: 5px;
+}
+
+.static{
+    position: fixed;
+    background-attachment: fixed;
+    background-color:black ;
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+
+.logo{
+    display: flex;
+}
+
+.text{
+    color: white;
+    font-size: xx-large;
+    padding-top: 15px;
+}
+
+.static img{
+    height: 50px;
+    width: 50px;
+    padding: 10px 15px 40px 8px;
+    
+}
+
+.dynamic{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    padding-bottom: 100px;
+    background-color: rgb(39, 33, 33);
+    height:max-content;  
+    width: 80%;
+    visibility: visible;
+}
+
+.dynamic nav{
+    background-color: rgb(21, 20, 20);
+    position: fixed;
+    height: 50px;
+    width: 100%;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#login2{
+    background-color: rgb(39, 33, 33);
+    color: white;
+    border-radius: 18px;
+    height: 36px;
+    width: 85px;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#signUp{
+    background-color: rgb(39, 33, 33);
+    color: white;
+    border-radius: 18px;
+    height: 36px;
+    width: 85px;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#upgrade{
+    background-color: rgb(39, 33, 33);
+    color: white;
+    border-radius: 18px;
+    height: 36px;
+    width: 85px;
+    margin-top: 8px;
+    margin-left: 900px;
+    font-weight: 400;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#update1{
+    background-color: rgb(39, 33, 33);
+    color: white;
+    border-radius: 18px;
+    height: 36px;
+    width: 85px;
+    margin-top: 8px;
+    margin-left: 900px;
+    font-weight: 400;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.login li{
+    text-align: right;
+}
+
+.boxtop{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* margin-top: 40px; */
+}
+
+.titleTop{
+    /* margin-top: 80px; */
+    margin-left: 45px;
+    list-style-type: none;
+    padding-top: 60px;
+}
+
+.titleTop li{
+    color: white;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.box5{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    
+}
+
+.box{
+    background-color: rgb(21, 20, 20);
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: x-large;
+    text-align: center;
+    
+}
+
+.title{
+    margin-left: 45px;
+    list-style-type: none;
+    padding-top: 50px;
+}
+
+.box img{
+    background-color: red;
+    border-radius: 20px;
+    height: 190px;
+    width: 170px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    /* image-orientation: inherit; */
+}
+
+
+
+.box:hover{
+    background-color: rgb(45, 43, 43);
+}
+
+
+.title li{
+    color: white;
+    font-size: xx-large;
+    font-weight: 800;
+    /* background-color: red; */
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.bottomBar{
+    display: flex;
+    list-style-type: none;
+    margin-left: 45.5%;
+}
+
+.bottomBar button{
+    background-color: #333;
+    border-width: 0px;
+}
+
+/* .bottom img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 650px;
+    float: left;
+} */
+
+#progressBar{
+    width: 40%;
+    /* height: 10px; */
+    /* color: #333; */
+    /* background-color: red; */
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+.bottom i{
+    font-size: xx-large;
+    color: black;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 5px;
+}
+
+progress {
+    border-radius: 7px; 
+    width: 40%;
+    height: 5px;
+    margin-left: 455px;
+    margin-top: 10px;
+  }
+  progress::-webkit-progress-bar {
+    background-color: grey;
+    border-radius: 7px;
+  }
+  progress::-webkit-progress-value {
+    background-color: black;
+    border-radius: 7px;
+  }
+   progress::-moz-progress-bar {
+    border-radius: 7px;
+   } 
+
+
+                                                                /* LOGIN PAGE */
+
+.top{
+    display: flex;
+    background-color: white;
+    color: black;
+    height: available;
+    width: 100%;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.head{
+    list-style-type: none;
+    display: flex;
+}
+
+.head img{
+    height: 70px;
+    width: 70px;
+}
+
+.text1{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.loginContent{
+    height: available;
+    width: 40%;
+    margin-left: 27%;
+    margin-top: 100px;
+}
+
+.loginContent1{
+    list-style-type: none;
+    padding-left: 35%;
+}
+
+.loginContent button{
+    background-color: none;
+    border: none;
+    font-size: x-large;
+    font-family:monospace;
+}
+
+.email,.password{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#emaill,#confirmEmail{
+    margin-bottom: 20px;
+}
+
+#password{
+    margin-bottom: 20px;
+}
+
+#emaill input{
+    border-radius: 5px;
+    height: 50px;
+}
+
+#confirmEmail input{
+    border-radius: 5px;
+    height: 50px;
+}
+
+#password input{
+    border-radius: 5px;
+    height: 50px;
+}
+
+.forgotpassword{
+    margin-top: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loginPageLogin{
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.loginPageLogin button:hover{
+    cursor: pointer;
+}
+
+.loginPageLogin button{
+    background-color: rgb(32, 212, 8);
+    height: 40px;
+    width: 100px;
+    border-radius: 40px;
+    color: black;
+    border-width: 0px;
+    font-size: large;
+}
+
+.loginContent1 hr{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80%; 
+
+}
+
+#dontHaveAccount{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    list-style: none;
+    padding-left: 200px;
+    font-weight: lighter;
+}
+
+#loginPageSignUp{
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 220px;
+    padding: 8px;
+    width: 350px;
+    height: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    font-size: large;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(78, 71, 71);
+    list-style: none;
+}
+
+#loginPageSignUp :hover{
+    cursor: pointer;
+}
+
+#loginPageSignUp button{
+    background-color: white;
+    width: 300px;
+    height: 10px;
+    border-radius: 20px;
+}
+
+#hr{
+    margin-top: 20px;
+    margin-left: 250px;
+    width: 300px;
+}
+
+                                                       /* Sign Up Page */
+
+
+.name{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#name{
+    margin-bottom: 3px;
+}
+
+#name input{
+    border-radius: 5px;
+    height: 50px;
+}
+
+.terms{
+    padding-top: 40px;
+    font-size: small;
+    text-align: center;
+}
+
+.privacy{
+    padding-top: 20px;
+    font-size: small;
+    text-align: center;
+}
+
+#condition,#policy{
+    color: rgb(32, 212, 8);
+}
+
+#condition,#policy:hover{
+    cursor: pointer;
+}
+
+/* .signupPagesgnup input{
+    background-color: rgb(32, 212, 8);
+    border-width: 0px;
+    
+} */
+
+.signupPagesgnup input{
+    margin-top: 30px;
+    margin-left: 150px;
+    background-color: rgb(32, 212, 8);
+    height: 40px;
+    width: 100px;
+    border-radius: 40px;
+    color: black;
+    border-width: 0px;
+    font-size: large;
+}
+
+.signupPagesgnup :hover{
+    cursor: pointer;
+}
+
+.signupPagesgnup{
+    list-style: none;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 145px;
+}
+
+.signupPagesgnup button{
+    /* list-style: none;
+    align-items: center;*/
+    background-color: rgb(32, 212, 8);
+    height: 40px;
+    width: 100px;
+    border-radius: 40px;
+    color: black;
+    border-width: 0px;
+    font-size: large;
+}
+
+.log{
+    margin-top: 10px;
+    margin-left: 210px;
+    text-align: center;
+    list-style: none;
+}
+
+.log button{
+    font-size: 15px;
+    color: rgb(32, 212, 8);
+    background-color: white;
+}
+
+.log button:hover{
+    cursor: pointer;
+}
+
+#accountlogin{
+    color: rgb(32, 212, 8);
+}
+
+#accountlogin:hover{
+    cursor: pointer;
+}
+
+
+
+/* .loginContent1 hr{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80%; 
+
+} */
+
+                                                     /* Search Page  */
+
+.searchPageDynamic input[type = search]{
+    margin-top: 45px;
+    margin-left: 70px;
+    border: 2px;
+    border-radius: 20px;
+    width: 600px;
+    height: 40px;
+    padding-left: 30px;
+    font-size: medium;
+}
+
+#searchPageBox1{
+    margin-top: 50px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* padding-top: 10px; */
+    position: relative;
+}
+
+.searchPageBox{
+    /* background-color: blueviolet; */
+    height: 160px;
+    width: 160px;
+    border-radius: 20px;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#p{
+    height: 160px;
+    width: 160px;
+    border-radius: 20px;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+                                                     /* Create Playlist */
+
+.createPlaylist{
+    display: flex;
+    background-color: red;
+    background-image: linear-gradient(rgb(108, 94, 94),rgb(40, 35, 35));
+    width: 100%;
+    /* height: 350px; */
+}
+
+/* .createPlaylist :hover{
+    cursor: pointer;
+} */
+
+.playlistName{
+    display: flex;
+}
+
+.profilePic{
+    height: 200px;
+    width: 200px;
+    background-color: #333;
+    margin: 80px;
+}
+
+.profilePic i{
+    font-size: 100px;
+    margin: 50px;
+}
+
+.playlistName{
+    /* background-color: red; */
+    width: 100%;
+    height: 100px;
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    font-weight: bolder;
+}
+
+/* .playlistName input{
+    width: 100%;
+    border: none;
+    background-color: none;
+    background-image: linear-gradient(rgb(108, 94, 94),rgb(40, 35, 35));
+ } */ 
+
+#findSomething{
+    margin: 50px;
+    margin-top: 70px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#searchBar input{
+    background-color: rgb(63, 55, 55);
+    border: none;
+    margin: 0px 50px 50px 50px;
+    width: 400px;
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 20px;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+
+                                                  /* Your Library */
+
+.playlist{
+    font-size: 80px;
+    font-weight: bolder;
+    padding: 20px;
+    background-image: linear-gradient(rgb(108, 94, 94),rgb(40, 35, 35));
+    height: 100px;
+}
+
+.playlistItem ul{
+    list-style: none;
+}
+
+.playlistItem li{
+    display: flex;
+    width: 100%;
+    color: white;
+    /* text-align: center; */
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* margin-top: 10px; */
+    font-weight: bold;
+    font-size: larger;
+}
+
+.playlistItem li img{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    /* padding: 10px; */
+    background-color: rgb(129, 113, 113);
+    /* border: 3px; */
+    /* border-color: red; */
+}
+
+.playlistItem div{
+    margin: 10px;
+    padding-left: 20px;
+    letter-spacing: 20px;
+}
+
+                                                            /* Popup animation */
+
+.popUp{
+    height: 600px;
+    width: 900px;
+    background-color: black;
+    border-radius: 30px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.open-popUp{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+}
+
+.dynamic-visibility{
+    opacity: 0.2;
+}
+
+.static-visibility{
+    opacity: 0.2;
+}
+
+.popUp ul{
+    list-style: none;
+    display: flex;
+}
+
+.popUp li{
+    height: 550px;
+    width: 300px;
+    background-color: #333;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.popUp button{
+    background-color: chartreuse;
+    height: 40px;
+    width: 90px;
+    margin-top: 115px;
+    border-radius: 50px;
+    color: white;
+    font-size: medium;
+    font-weight: bolder; 
+    cursor: pointer;
+}
+
+.popUp p{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.popUp div{
+    margin-top: 100px;
+    text-align: left;
+
+}
+
+/*                                         Update popup                                                         */
+
+
+.update{
+    height: 600px;
+    width: 900px;
+    background-color: black;
+    border-radius: 30px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.open-update{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+}
+
+.dynamic-visibility{
+    opacity: 0.2;
+}
+
+.static-visibility{
+    opacity: 0.2;
+}
+
+.update ul{
+    list-style: none;
+    display: flex;
+}
+
+.update li{
+    height: 550px;
+    width: 300px;
+    background-color: #333;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.update button{
+    background-color: chartreuse;
+    height: 40px;
+    width: 90px;
+    margin-top: 115px;
+    border-radius: 50px;
+    color: white;
+    font-size: medium;
+    font-weight: bolder; 
+    cursor: pointer;
+}
+
+.update p{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.update div{
+    margin-top: 100px;
+    text-align: left;
+
+}

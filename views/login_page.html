@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Login </title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <div class="top">
+        <ul class="head">
+            <li> <img src="../logos/logo2.png" alt="logo"> </li>
+            <li class="text1"> Saregama </li>
+        </ul>
+    </div>
+    <hr size="1 " width="100%" color="black">
+    <div class="loginContent">
+        <form action="/check", method="post">
+            <ul class="loginContent1">
+                <li class="email"> Email address </li>
+                <li id="emaill"> <input type="email" size="53px" id="loginemail" name="loginEmail"><br/></li>
+                <li class="password"> Password </li>
+                <li id="password"> <input type="password" size="53px" id="loginPassword" name="loginPassword"> </li>
+                <li class="forgotpassword" style="cursor: pointer;">Forgot password?</li>
+                <li class="loginPageLogin"><a href="/HomePage"><button id="btn"> Login </button> </a></li>
+            </ul>
+        </form>
+        <!-- <li class="loginPageLogin"><a href="/HomePage"><button id="btn"> Login </button> </a></li> -->
+        <hr id="hr" size="1">
+        <li id="dontHaveAccount"> Don't have an account? </li>
+        <li id="loginPageSignUp"> <a href="signUp"><button> Sign Up </button></a> </li>
+    </div>
+    <script src="../public/script.js"></script>
+</body>
+</html>

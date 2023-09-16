@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title> Saregama </title>
+    
+    <link rel="stylesheet" href="/public/style.css">
+    <script src="https://kit.fontawesome.com/05193eb39e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="outer"> 
+        <div class="static" id="static">
+            <ul class="navBar">
+                <li class="logo"> <img src="../logos/logo2.png" alt="logo"> 
+                    <h1 class="text"> Saregama </h1> 
+                </li>
+                <li><a href="#home"> <i class="fa-sharp fa-solid fa-house"></i> Home </a></li>
+                <li><a href="/searchPage"> <i class="fa-solid fa-magnifying-glass"></i> Search </a></li>
+                <li><a href="/library"> <i class="fa-solid fa-music"></i> Your Library </a></li>
+                <li><a href="/createPlaylist"> <i class="fa-solid fa-square-plus"></i> Create Playlist </a></li>
+            </ul>
+        </div>
+
+        <div class="dynamic" id="dynamic">
+            <nav>
+                <ul class="login">
+                    <li><button id="upgrade" onclick="openPopUp()" >Upgrade</button></li>
+                    <li><a href="/signUp"><button id="signUp">Sign up</button></a></li>
+                    <li><a href="/login"><button id="login2">Login</button></a></li>
+                </ul>
+            </nav>
+            <ul class="titleTop">
+                <li>Only For You</li>
+            </ul>
+           <ul class="box5">
+                <li class="box"> <a href="#box1">  </a> <img src="../posters/poster1.png" alt="poster1" id="rock"> Rock Music </li>
+                <li class="box"> <a href="#box2">  </a> <img src="../posters/poster5.jpg" alt="poster5"> Reverbed songs </li>
+                <li class="box"> <a href="#box3">  </a> <img src="../posters/poster8.jpg" alt="poster8"> 90's Songs</li>
+                <li class="box"> <a href="#box4">  </a> <img src="../posters/poster10.jpg" alt="poster10" id="lofi"> Lofi music </li>
+                <li class="box"> <a href="#box5">  </a> <img src="../posters/poster2.jpg" alt="poster2"> Holloywood </li>
+           </ul>
+            <ul class="title">
+                <li>Top Songs</li>
+            </ul>
+           <ul class="box5">
+                <li class="box"> <a href="#box6"> </a><img src="../posters/poster3.jpg" alt="poster3"> Classical music</li>
+                <li class="box"> <a href="#box7"> </a><img src="../posters/poster7.jpg" alt="poster7"> Metal </li>
+                <li class="box"> <a href="#box8"> </a><img src="../posters/poster9.jpg" alt="poster9" id="jazz"> Jazz </li>
+                <li class="box"> <a href="#box9">  </a> <img src="../posters/poster1.png" alt="poster1" id="party"> Party songs </li>
+                <li class="box"> <a href="#box10">  </a> <img src="../posters/poster11.jpg" alt="poster11" id="travel"> Travel songs </li>
+            </ul>
+            <ul class="title">
+                <li>Recommended</li>
+            </ul>
+            <ul class="box5">
+                <li class="box"> <a href="#box11"></a> <img src="../posters/poster15.jpeg" alt="poster15" id="romantic"> Romantic songs </li>
+                <li class="box"> <a href="#box12"></a> <img src="../posters/poster17.jpg" alt="poster17"> Slow songs </li>
+                <li class="box"> <a href="#box13"></a> <img src="../posters/poster5.jpg" alt="poster5" id="bollywood"> Bollywood songs </li>
+                <li class="box"> <a href="#box14"></a> <img src="../posters/poster18.jpg" alt="poster18" id="punjabi"> Punjabi songs </li>
+                <li class="box"> <a href="#box15"></a>  <img src="../posters/poster10.jpg" alt="poster10"> Specially for you </li>
+            </ul>
+
+            
+        </div>  
+        <div class="popUp" id="popUp">
+            <ul>
+                <li>*Weekly Subscription 
+                    <div>    
+                        <p> • No ads</p>
+                        <p> • Can access special playlists</p>
+                        <p> • Get a chance to meet your   favorite singer</p>
+                        <p> • ₹7/-  per day</p>
+                    </div>
+                    <button onclick="closePopUp()">BUY</button></li>
+                <li>*Monthly Subscription
+                    <div>    
+                        <p> • No ads</p>
+                        <p> • Can access special playlists</p>
+                        <p> • Get a chance to meet your favorite singer</p>
+                        <p> • ₹5/-  per day</p>
+                    </div>
+                    <button onclick="closePopUp()">BUY</button></li>
+                <li>*Yearly Subscription
+                    <div>    
+                        <p> • No ads</p>
+                        <p> • Can access special playlists</p>
+                        <p> • Get a chance to meet your favorite singer</p>
+                        <p> • ₹3/-  per day</p>
+                    </div>
+                    <button onclick="closePopUp()">BUY</button></li>
+            </ul>
+        </div>
+    </div>
+    <bottom class="bottom">
+        <ul class="bottomBar">
+            <!-- <li><img src="logo4-removebg-preview.png" alt=""></li>s -->
+            <li><button><i class="fa-solid fa-backward-step"></i></button></li>
+            <li><button><i class="fa-solid fa-circle-play" id="play"></i></button></li>
+            <li><button><i class="fa-solid fa-forward-step"></i></button></li>
+        </ul>
+        <!-- <input type="range" name="range" id="progressBar" min="0" max="100"> -->
+        <progress value="0" max="100" id="bar">  </progress>
+    </bottom>
+    <script src="../public/script.js"></script>
+    <script>
+        
+        let popup = document.getElementById("popUp");
+        let dynamic = document.getElementById("dynamic");
+        let static = document.getElementById("static");
+        function openPopUp()
+        {
+            popup.classList.add("open-popUp");
+            dynamic.classList.add("dynamic-visibility");
+            static.classList.add("static-visibility");
+        }
+        function closePopUp()
+        {
+            popup.classList.remove("open-popUp");
+            dynamic.classList.remove("dynamic-visibility");
+            static.classList.remove("static-visibility");
+        }
+
+    </script>
+</body>
+</html>

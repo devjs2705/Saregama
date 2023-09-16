@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Sign Up </title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <div class="top">
+        <ul class="head">
+            <li> <img src="../logos/logo2.png" alt="logo"> </li>
+            <li class="text1"> Saregama </li>
+        </ul>
+    </div>
+    <hr size="1 " width="100%" color="black">
+
+    <div class="loginContent">
+        <form action="/submit", method="post">
+            <ul class="loginContent1">
+                <li class="email"> What's your email</li>
+                <li id="emaill"> <input type="email" size="53px" id="inputemail" name="email"> </li>
+                <li class="email"> Confirm your email </li>
+                <li id="confirmEmail"> <input type="email" size="53px" id="inputConfirmEmail" name="confirmEmail"> </li>
+                <li class="password"> Create a password </li>
+                <li id="password"> <input type="password" size="53px" name="password"> </li>
+                <li class="name"> What should we call you? </li>
+                <li id="name"> <input type="text" size="53px" name="name"> </li>
+                <li class="profileName"> This appears on your profile. </li>
+                <li class="terms"> <span>By clicking on sign-up, you agree to Saregama's</span><span id="condition"><u> Terms and condition of use</u></span> </li>
+                <li class="privacy"> <span>To learn more about how Saregama collects, uses, shares and protects your personal data, </span><span id="policy"> <u>please see Saregama's Privacy Policy</u></span> </li>
+                <li class="signupPagesgnup"><a href="/login"><button id="btn">Sign up</button></a></li>
+            </ul>
+            <!-- <input type="submit"> -->
+        </form>
+        <!-- <li class="signupPagesgnup"><a href="/login"><button id="btn">Sign up</button></a></li> -->
+        <li class="log"> <span>Have an account?</span> <span><a href="/login"><button><u>Login</u></button></a></span></li>
+    </div>
+    <script src="../public/script.js"></script>
+</body>
+</html>
